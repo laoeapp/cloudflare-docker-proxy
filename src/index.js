@@ -18,7 +18,7 @@ const routes = {
   "cloudsmith.aecvpn.com": "https://docker.cloudsmith.io",
 
   // staging
-  "docker-staging.laoex.link": dockerHub,
+  "docker-staging.aecvpn.com": dockerHub,
 };
 
 function routeByHosts(host) {
