@@ -13,13 +13,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.laoex.link", custom_domain = true },
-  { pattern = "quey.laoex.link", custom_domain = true },
-  { pattern = "gcr.laoex.link", custom_domain = true },
-  { pattern = "k8s-gcr.laoex.link", custom_domain = true },
-  { pattern = "k8s.laoex.link", custom_domain = true },
-  { pattern = "ghcr.laoex.link", custom_domain = true },
-  { pattern = "cloudsmith.laoex.link", custom_domain = true },
+  { pattern = "docker.aecvpn.com", custom_domain = true },
+  { pattern = "quey.aecvpn.com", custom_domain = true },
+  { pattern = "gcr.aecvpn.com", custom_domain = true },
+  { pattern = "k8s-gcr.aecvpn.com", custom_domain = true },
+  { pattern = "k8s.aecvpn.com", custom_domain = true },
+  { pattern = "ghcr.aecvpn.com", custom_domain = true },
+  { pattern = "cloudsmith.aecvpn.com", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -28,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.laoex.link", custom_domain = true }
+route = { pattern = "docker-staging.aecvpn.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
