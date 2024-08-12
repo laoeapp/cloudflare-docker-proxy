@@ -9,13 +9,13 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.laoex.link": dockerHub,
-  "quay.laoex.link": "https://quay.io",
-  "gcr.laoex.link": "https://gcr.io",
-  "k8s-gcr.laoex.link": "https://k8s.gcr.io",
-  "k8s.laoex.link": "https://registry.k8s.io",
-  "ghcr.laoex.link": "https://ghcr.io",
-  "cloudsmith.laoex.link": "https://docker.cloudsmith.io",
+  "docker.aecvpn.com": dockerHub,
+  "quay.aecvpn.com": "https://quay.io",
+  "gcr.aecvpn.com": "https://gcr.io",
+  "k8s-gcr.aecvpn.com": "https://k8s.gcr.io",
+  "k8s.aecvpn.com": "https://registry.k8s.io",
+  "ghcr.aecvpn.com": "https://ghcr.io",
+  "cloudsmith.aecvpn.com": "https://docker.cloudsmith.io",
 
   // staging
   "docker-staging.laoex.link": dockerHub,
