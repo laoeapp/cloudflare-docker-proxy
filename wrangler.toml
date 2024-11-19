@@ -1,5 +1,5 @@
 name = "cloudflare-docker-proxy"
-compatibility_date = "2024-08-01"
+compatibility_date = "2024-11-01"
 
 [dev]
 ip = "0.0.0.0"
@@ -13,13 +13,8 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.aecvpn.com", custom_domain = true },
-  { pattern = "quey.aecvpn.com", custom_domain = true },
-  { pattern = "gcr.aecvpn.com", custom_domain = true },
-  { pattern = "k8s-gcr.aecvpn.com", custom_domain = true },
-  { pattern = "k8s.aecvpn.com", custom_domain = true },
-  { pattern = "ghcr.aecvpn.com", custom_domain = true },
-  { pattern = "cloudsmith.aecvpn.com", custom_domain = true },
+  { pattern = "docker.appscross.com", custom_domain = true },
+  { pattern = "ghcr.appscross.com", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -28,7 +23,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.aecvpn.com", custom_domain = true }
+route = { pattern = "docker-staging.appscross.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
