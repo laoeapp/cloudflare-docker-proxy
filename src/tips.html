@@ -95,7 +95,7 @@ mkdir -p /etc/docker</code><button class="copy-button" onclick="copyCode(this)">
 <pre><code>
 tee /etc/docker/daemon.json &lt;&lt;EOF
 {
-    "registry-mirrors": ["https://docker.aecvpn.com"]
+    "registry-mirrors": ["https://docker.appscross.com"]
 }
 EOF</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
 <pre><code>
@@ -104,7 +104,7 @@ systemctl daemon-reload</code><button class="copy-button" onclick="copyCode(this
 systemctl restart docker</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
 <p><h2 style="font-size:14pt">不用设置环境也可以直接使用，用法示例：</h2></p>
 <pre><code>
-docker pull docker.aecvpn.com/library/mysql:8.0</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
+docker pull docker.appscross.com/library/mysql:8.0</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
 <p>说明：library是一个特殊的命名空间，它代表的是官方镜像。</p>
 </div>
 <div class="footer">
