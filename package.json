@@ -3,7 +3,7 @@
   "private": true,
   "description": "",
   "version": "1.0.0",
-  "author": "laoe <contact@appscross.com>",
+  "author": "appscross <contact@appscross.com>",
   "dependencies": {},
   "devDependencies": {
     "prettier": "^2.4.1",
