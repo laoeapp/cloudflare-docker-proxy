@@ -92,10 +92,10 @@
 <h2 style="font-size:14pt">为了加速镜像拉取，使用以下命令设置<b>registry mirror</b></h2>
 <pre><code>
 mkdir -p /etc/docker</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
-<pre><code>
+<pre class="dockerproxy"><code>
 tee /etc/docker/daemon.json &lt;&lt;EOF
 {
-    "registry-mirrors": ["https://docker.appscross.com"]
+    "registry-mirrors": ["https://example.com"]
 }
 EOF</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
 <pre><code>
@@ -103,8 +103,18 @@ systemctl daemon-reload</code><button class="copy-button" onclick="copyCode(this
 <pre><code>
 systemctl restart docker</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
 <p><h2 style="font-size:14pt">不用设置环境也可以直接使用，用法示例：</h2></p>
-<pre><code>
-docker pull docker.appscross.com/library/mysql:8.0</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
+<pre class="dockerproxy"><code>
+docker pull example.com/library/mysql:8.0</code><button class="copy-button" onclick="copyCode(this)">复制代码</button></pre>
+<script> 
+	var currentHost = window.location.host; 
+	var preElements = document.querySelectorAll('dockerproxy'); 
+	preElements.forEach(function(preElement) 
+	{ 
+		var preContent = preElement.textContent; 
+		var updatedContent = preContent.replace(/example\.com/g, currentHost); 
+		preElement.textContent = updatedContent; 
+	}); 
+</script>
 <p>说明：library是一个特殊的命名空间，它代表的是官方镜像。</p>
 </div>
 <div class="footer">
