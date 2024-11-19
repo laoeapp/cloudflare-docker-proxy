@@ -28,11 +28,8 @@
    - add more records and modify the config as you need
    ```javascript
    const routes = {
-     "docker.aecvpn.com": "https://registry-1.docker.io",
-     "quay.aecvpn.com": "https://quay.io",
-     "gcr.aecvpn.como": "https://k8s.gcr.io",
-     "k8s-gcr.aecvpn.com": "https://k8s.gcr.io",
-     "ghcr.aecvpn.com": "https://ghcr.io",
+     "docker.appscross.com": "https://registry-1.docker.io",
+     "ghcr.appscross.com": "https://ghcr.io",
    };
    ```
 
