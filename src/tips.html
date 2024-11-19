@@ -110,9 +110,9 @@ docker pull example.com/library/mysql:8.0</code><button class="copy-button" oncl
 	var preElements = document.querySelectorAll('pre.dockerproxy'); 
 	preElements.forEach(function(preElement) 
 	{ 
-		var preContent = preElement.textContent; 
+		var preContent = preElement.innerHTML; 
 		var updatedContent = preContent.replace(/example\.com/g, currentHost); 
-		preElement.textContent = updatedContent; 
+		preElement.innerHTML = updatedContent; 
 	}); 
 </script>
 <p>说明：library是一个特殊的命名空间，它代表的是官方镜像。</p>
