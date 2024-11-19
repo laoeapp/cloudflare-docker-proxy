@@ -9,16 +9,10 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.aecvpn.com": dockerHub,
-  "quay.aecvpn.com": "https://quay.io",
-  "gcr.aecvpn.com": "https://gcr.io",
-  "k8s-gcr.aecvpn.com": "https://k8s.gcr.io",
-  "k8s.aecvpn.com": "https://registry.k8s.io",
-  "ghcr.aecvpn.com": "https://ghcr.io",
-  "cloudsmith.aecvpn.com": "https://docker.cloudsmith.io",
-
+  "docker.appscross.com": dockerHub,
+  "ghcr.appscross.com": "https://ghcr.io",
   // staging
-  "docker-staging.aecvpn.com": dockerHub,
+  "docker-staging.appscross.com": dockerHub,
 };
 
 function routeByHosts(host) {
